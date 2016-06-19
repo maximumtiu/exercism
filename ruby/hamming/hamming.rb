@@ -6,7 +6,7 @@ class Hamming
 
     count = 0
     str_one.chars.each_with_index do |char, index|
-      if (char <=> str_two[index]) != 0
+      if char != str_two[index]
         count += 1
       end
     end
